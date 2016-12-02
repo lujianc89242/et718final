@@ -1,12 +1,20 @@
 <p id="notice"><%= notice %></p>
 
 
-
+<!-- Header -->
+<header id="top" class="header">
+    <div class="text-vertical-center">
+        <h1>Start Trading Today</h1>
+        <h3>Find the local goods &amp; sell yours</h3>
+        <br>
+        <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+    </div>
+</header>
 
 <div class="expanded row">
 <% @products.each do |product| %>
 
-    <div class="<%= cycle('medium-4 columns', 'medium-2 columns','medium-4 columns','medium-2 columns','medium-2 columns','medium-4 columns','medium-2 columns','medium-4 columns') %>">
+    <div class="<%= cycle('large-4 columns medium-6 columns', 'large-2 columns medium-6 columns','large-4 columns medium-6 columns','large-2 columns medium-6 columns','large-2 columns medium-6 columns','large-4 columns medium-6 columns','large-2 columns medium-6 columns','large-4 columns medium-6 columns') %>">
      <div class="card">
        <div class="image">
          <img src="http://static.pexels.com/wp-content/uploads/2014/07/alone-clouds-hills-1909-527x350.jpg">

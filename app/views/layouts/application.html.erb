@@ -21,12 +21,19 @@
   src="https://code.jquery.com/jquery-1.12.4.min.js"
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
   crossorigin="anonymous"></script>
-
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
     <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    
+<!--
+    <style type="text/css">
+      html { overflow-x: hidden; }
+    </style>
+-->
+
   </head>
 
   <body>
@@ -58,15 +65,6 @@
     </nav>
 
 
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Start Trading Today</h1>
-            <h3>Find the local goods &amp; sell yours</h3>
-            <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
-        </div>
-    </header>
 
 
     <%= yield %>
@@ -77,13 +75,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1 text-center">
-                        <h4><strong>Start Bootstrap</strong>
+                        <h4><strong>Traders</strong>
                         </h4>
-                        <p>3481 Melrose Place
-                            <br>Beverly Hills, CA 90210</p>
+                        <p>222-05 56th Ave
+                            <br>Bayside, NY 11364</p>
                         <ul class="list-unstyled">
                             <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                            <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
+                            <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:rogerfrontend@gmail.com">rogerfronend@gmail.com</a>
                             </li>
                         </ul>
                         <br>
@@ -99,7 +97,7 @@
                             </li>
                         </ul>
                         <hr class="small">
-                        <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                        <p class="text-muted">Copyright &copy; LAHTECH 2016</p>
                     </div>
                 </div>
             </div>
