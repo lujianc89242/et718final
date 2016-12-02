@@ -37,6 +37,12 @@
   </div>
 
   <div class="field">
+    <%= f.label :catagory %>
+    <!--<%= f.text_field :catagory %>-->
+    <%= f.select(:catagory, ['Toy','Food','ETC']) %>
+  </div>
+
+  <div class="field">
     <%= f.label :price %>
     <%= f.text_field :price %>
   </div>
